@@ -1,6 +1,6 @@
 {
   "name": "request-ms-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple CLI app that allows you to measure the response time with simple HEAD request",
   "bin": {
 		"request-ms": "bin/request-ms.js"
