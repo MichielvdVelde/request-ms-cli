@@ -37,7 +37,7 @@ program.hostname = program.args[0] || null;
 if(!program.hostname)
 	return displayErrorMessage('Error: No host specified');
 
-if(program.hostname.substr(0, 7).toLowerCase() != 'http://')
+if(program.hostname.substr(0, 4).toLowerCase() != 'http')
 	program.hostname = 'http://' + program.hostname;
 
 var urlOptions = url.parse(program.hostname);
