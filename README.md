@@ -20,6 +20,8 @@ See the help (`request-ms -h`) for all available options.
 
 # Version history
 
+* 0.0.3 - 17 December 2015
+  * Fixed timeout 'must be a number' error
 * 0.0.1 - 0.0.2 - 1 December 2015
   * (0.0.2) Fixed issue where HTTPS won't work
   * (0.0.1) Moved CLI app to separate package from [request-ms](http://github.com/MichielvdVelde/request-ms)
