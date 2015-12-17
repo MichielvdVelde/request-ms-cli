@@ -43,6 +43,13 @@ if(program.hostname.substr(0, 4).toLowerCase() != 'http')
 var urlOptions = url.parse(program.hostname);
 urlOptions.method = program.method;
 
+try {
+	program.timeout = parseInt(program.timeout);
+}
+catch(e) {
+	program.timeout = false;
+}
+
 request(urlOptions, { 'timeout': program.timeout || 2500 }, function(err, response) {
 	if(err)
 		return displayErrorMessage('Got an error:', err.message);
